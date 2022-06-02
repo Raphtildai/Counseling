@@ -1,0 +1,630 @@
+body{
+    padding: 20px;
+    margin: 20px;
+    background-image: url(images/slider.jpg);
+    background-color: gray;
+    color: black;
+    align-content: center;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2,h3,h4,p{
+    text-align: center;
+}
+/* Slider */
+* {box-sizing: border-box}
+/* Slideshow container */
+.slider{
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+    /* margin-top: 100px; */
+    /* position: relative; */
+    /* background-image: url(images/slider.jpg); */
+    /* margin-top: 100px;
+    color: white;*/
+    /* display: flex; */
+    /*width: 100%;
+    height: 100px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.slider-image{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 350px;
+}
+.slideshow-container{
+    /* max-width: 1000px;
+    position: absolute;
+    margin: auto;
+    margin-top: 100px; */
+}
+/* Hide images by default */
+/* .mySlides{
+    display: inline-block;
+} */
+/* Next & Previous buttons */
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/* Position the "next button" to the right */
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+/* Caption Text */
+.text{
+    color: #f2f2f2;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+/* Caption Text (1/3 etc) */
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* The dots/bullets/indicators */
+.red-dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    transition:  background-color 0.6s ease;
+}
+.green-dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    transition:  background-color 0.6s ease;
+}
+.blue-dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    transition:  background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+/* Fading animation */
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+.nav-bar{
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+}
+.nav-link{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+}
+.active{
+    background-color: lightgray;
+    color: black;
+    font-weight: bolder;
+    border-radius:  10px;
+}
+.active:hover{
+    background-color: #fff;
+    color: royalblue;
+}
+.nav-link:hover{
+    background-color: lightgrey;
+    color: royalblue;
+    border-radius: 10px;
+    padding: 30px;
+}
+.container{
+    padding: 20px;
+    display: auto;
+    background-color: white;
+    color: black;
+}
+.card-header{
+    float: none;
+    padding: 20px;
+}
+.our-services{
+    background-color: lightgray;
+    padding-top: 20px;
+    width: 100%;
+    height: 300px;
+}
+.blog{
+    background-color: lightgray;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner{
+    background-image: url(images/slider.jpg);
+    color: #fff;
+    padding: 0px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner:hover{
+    height: 100px;
+    transition: 1s;
+}
+.banner:hover:active{
+    transition-delay: 0s;
+}
+.contact-us{
+    background-color: lightgray;
+    padding-top: 20px;
+    /* margin-top: 20px; */
+    margin: 40px;
+    /* width: 85%; */
+    height: 300px;
+}
+
+/* About us page */
+.about{
+    /* display: flex; */
+    background-color: #717171;
+    padding: 20px;
+    margin: 20px;
+    height: 400px; 
+}
+.about-image img{
+    float: right;
+    /* display: flex; */
+    margin: 20px;
+    padding: 20px;
+    width: auto;
+    height: 200px;
+}
+.about-content{
+    float: left;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Contact Us Page */
+.contact{
+    /* display: flex; */
+    background-color: #717171;
+    padding: 20px;
+    margin: 20px;
+    height: 400px; 
+}
+.contact-image img{
+    float: right;
+    /* display: flex; */
+    margin: 20px;
+    padding: 20px;
+    width: auto;
+    height: 200px;
+}
+.contact-content{
+    float: left;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: large;
+    margin: auto;
+    width: 80%;
+    height: 500px;
+}
+.label{
+    margin: auto;
+}
+.form-input{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+}
+.btn_submit{
+    margin: 20px;
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+.socials{
+    background-color: lightgreen;
+    margin: auto;
+    font-size: small;
+    font-weight: normal;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_location{
+    margin: auto;
+    padding: 20px;
+    float: right;
+}
+.contact_number{
+    margin: auto;
+    padding: 20px;
+}
+.contact_email{
+    margin: auto;
+    float: left;
+    padding: 20px;
+}
+/* Media */
+@media  screen and (max-width: 1500px) {
+    /* About Page */
+    .about{
+        width: auto;
+        height: 500px;
+    }
+    .about-image img{
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+        width: 35%;
+        height: 30%;
+    }
+    .about-content{
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+    }
+    .about-image img:hover{
+        width: 40%;
+        opacity: 0.5;
+    }
+    /* Contact Us Page */
+    .contact{
+        width: auto;
+        height: 500px;
+    }
+    .contact-image img{
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+        width: 35%;
+        height: 30%;
+    }
+    .contact-content{
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+    }
+    .contact-image img:hover{
+        width: 40%;
+        opacity: 0.5;
+    }
+}
+@media  screen and (max-width: 1200px) {
+    /* About Us Page */
+    .about{
+        width: auto;
+        height: 500px;
+    }
+    .about-image img{
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+        width: 30%;
+        height: 25%px;
+    }
+    .about-content{
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+    }
+    .about-image img:hover{
+        width: 250px;
+        opacity: 0.5;
+    }
+    /* Contact Us Page */
+    .contact{
+        width: auto;
+        height: 500px;
+    }
+    .contact-image img{
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+        width: 30%;
+        height: 25%px;
+    }
+    .contact-content{
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+    }
+    .contact-image img:hover{
+        width: 250px;
+        opacity: 0.5;
+    }
+}
+@media  screen and (max-width: 900px) {
+    /* About Us Page */
+    .about{
+        width: auto;
+        height: 500px;
+    }
+    .about-image img{
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 60%;
+        height: 40%;
+    }
+    .about-content{
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-image img:hover{
+        width: 65%;
+        opacity: 0.5;
+    }
+    /* Contact Us Page */
+    .contact{
+        width: auto;
+        height: 500px;
+    }
+    .contact-image img{
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 60%;
+        height: 40%;
+    }
+    .contact-content{
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-image img:hover{
+        width: 65%;
+        opacity: 0.5;
+    }
+}
+@media screen and (max-width:600px){
+    /* About Us Page */
+    .about{
+        padding: 10px;
+        width: auto;
+        height: 400px;
+    }
+    .about-image img{
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: auto;
+        width: 60%;
+        height: 40%;
+    }
+    .about-content{
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-image img:hover{
+        width: 65%;
+        opacity: 0.5;
+    }
+    /* Contact Us Page */
+    .contact{
+        padding: 10px;
+        width: auto;
+        height: 300px;
+    }
+    .contact-image img{
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: auto;
+        width: 60%;
+        height: 40%;
+    }
+    .contact-content{
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-image img:hover{
+        width: 65%;
+        opacity: 0.5;
+    }
+    .contact-form{
+        background-color: lightgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        font-size: medium;
+        margin: auto;
+        width: 80%;
+        height: 300px;
+    }
+    .label{
+        margin: auto;
+    }
+    .form-input{
+        width: auto;
+        margin: auto;
+        padding: 5px;
+        border-radius: 10px;
+        justify-content: center;
+    }
+    #textarea{
+        width: 170px;
+        height: 40px;
+    }
+    .btn_submit{
+        margin: 10px;
+        background-color: green;
+        color: white;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .socials{
+        margin: auto;
+        padding: 10px;
+        display: inline-block;
+    }
+    .contact_location{
+        margin: auto;
+        padding: 10px;
+        float: none;
+    }
+    .contact_number{
+        margin: auto;
+    }
+    .contact_email{
+        margin: auto;
+        padding: 10px;
+        float: none;
+    }
+}
+@media screen and (max-width:300px){
+    /* About Us Page */
+    .about{
+        width: auto;
+        height: 100px;
+    }
+    .about-image img{
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 60%;
+        height: 40%;
+    }
+    .about-content{
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-image img:hover{
+        width: 65%;
+        opacity: 0.5;
+    }
+    /* Contact Us Page */
+    .contact{
+        width: auto;
+        height: 100px;
+    }
+    .contact-image img{
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 60%;
+        height: 40%;
+    }
+    .contact-content{
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-image img:hover{
+        width: 65%;
+        opacity: 0.5;
+    }
+    
+}
+.footer{
+    /* width: 95%; */
+    margin: 5px 25px;
+    padding: 20px;
+    font-weight: bolder;
+    color: #fff;
+}
+
